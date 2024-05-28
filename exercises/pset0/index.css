@@ -28,17 +28,21 @@
   margin: 0;
 }
 
-a {
+.box__link {
   color: #ff8000;
   font-weight: 800;
 }
 
-.box__images__photo {
+.box__article__image {
   margin: 0;
   padding: 9px 0;
   width: 100%;
 }
 
-p {
+.box__paragraph {
   font-size: 16px;
+}
+
+.box__paragraph--last {
+  margin-top: -7px;
 }
