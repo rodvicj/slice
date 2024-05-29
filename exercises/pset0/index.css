@@ -1,20 +1,22 @@
+body {
+  font-size: 16px;
+}
+
 * {
   box-sizing: border-box;
 }
 
 .box {
   width: 500px;
+  margin: 0 auto;
+  /* font-size: 16px; */
 }
-
-/* .box__title__container { */
-/*   width: auto; */
-/* } */
 
 .box__title {
   text-align: center;
   font-size: 48px;
   color: #2e7ad3;
-  /* margin: 45px; */
+  margin: 45px 0;
 }
 
 .box__article {
@@ -22,7 +24,7 @@
   background: #f1f1f1;
 }
 
-.box__article__title {
+.box__sub-title {
   font-size: 32px;
   color: #104c90;
   margin: 0;
@@ -30,17 +32,18 @@
 
 .box__link {
   color: #ff8000;
-  font-weight: 800;
+  font-weight: bold;
 }
 
-.box__article__image {
+.box__link:hover,
+.box__link:focus {
+  color: darkblue;
+}
+
+.box__image {
   margin: 0;
   padding: 9px 0;
   width: 100%;
-}
-
-.box__paragraph {
-  font-size: 16px;
 }
 
 .box__paragraph--last {
