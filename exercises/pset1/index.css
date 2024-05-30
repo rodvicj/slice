@@ -1,3 +1,5 @@
+/* WARNING: This is about compound selector, AVOID it as much as possible */
+
 body {
   margin: 0;
   font-size: 16px;
