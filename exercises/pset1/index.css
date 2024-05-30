@@ -1,4 +1,5 @@
 body {
+  margin: 0;
   font-size: 16px;
 }
 
@@ -23,14 +24,11 @@ section {
   display: inline-block;
   padding: 15px 40px;
   margin-right: 1em;
+  text-decoration: none;
 }
 
-.section-two .btn {
-  background: black;
-  color: white;
-  display: inline-block;
-  padding: 15px 40px;
-  margin-right: 1em;
+.section-one .btn:hover {
+  background: darkgrey;
 }
 
 .header {
@@ -58,6 +56,10 @@ section {
   font-weight: bold;
 }
 
+.section-two {
+  color: #000;
+}
+
 .section-two .link {
   color: darkblue;
   font-weight: bold;
@@ -66,4 +68,17 @@ section {
 .section-two .link:hover {
   color: red;
   font-weight: bold;
+}
+
+.section-two .btn {
+  background: #000;
+  color: yellow;
+  display: inline-block;
+  padding: 15px 40px;
+  margin-right: 1em;
+  text-decoration: none;
+}
+
+.section-two .btn:hover {
+  background: darkgrey;
 }
