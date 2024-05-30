@@ -1,0 +1,69 @@
+body {
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+header,
+section {
+  padding: 50px;
+}
+
+.section-one .btn {
+  background: yellow;
+  color: black;
+  display: inline-block;
+  padding: 15px 40px;
+  margin-right: 1em;
+}
+
+.section-two .btn {
+  background: black;
+  color: white;
+  display: inline-block;
+  padding: 15px 40px;
+  margin-right: 1em;
+}
+
+.header {
+  background: yellow;
+  color: black;
+}
+
+.header h1 {
+  padding: 1em;
+  text-align: center;
+}
+
+.section-one {
+  background: black;
+  color: yellow;
+}
+
+.section-one .link {
+  color: yellow;
+  font-weight: bold;
+}
+
+.section-one .link:hover {
+  color: red;
+  font-weight: bold;
+}
+
+.section-two .link {
+  color: darkblue;
+  font-weight: bold;
+}
+
+.section-two .link:hover {
+  color: red;
+  font-weight: bold;
+}
