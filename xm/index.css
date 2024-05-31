@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  background: #000;
+  padding: 25px;
+}
+
+
+.btn {
+  text-decoration: none;
+  color: white;
+}
+
+/* .container__header { */
+/*   text-align: center; */
+/* } */
