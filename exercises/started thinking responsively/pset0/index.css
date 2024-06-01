@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  font-size: 1.125rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Typography */
+
+/* Layout */
+
+.box {
+  max-width: 980px;
+  width: 95%;
+  margin: 0 auto;
+  border: solid 2px blue;
+}
+
+.box__image {
+  max-width: 100%;
+}
+
+.box__row {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  border: solid 2px magenta;
+}
+
+.box__container {
+  display: flex;
+  padding: 1em;
+  border: 2px solid #f00;
+}
+
+.box__column {
+  flex-direction: column;
+}
+
+.box__column--bg {
+  background: #212614;
+  color: #fff;
+}
+
+

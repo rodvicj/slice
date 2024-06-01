@@ -17,6 +17,7 @@ body {
 .container {
   width: 620px;
   margin: 0 auto;
+  border: 2px solid magenta;
 }
 
 .box__header {
@@ -25,7 +26,7 @@ body {
 
 .box__title {
   font-size: 36px;
-  color: white;
+  color: #fff;
   padding: 40px;
   font-weight: 900;
   margin: 0;
@@ -51,7 +52,7 @@ body {
 }
 
 .box__section--two {
-  color: white;
+  color: #fff;
   padding: 45px 0;
 }
 
@@ -60,21 +61,25 @@ body {
 }
 
 .btn {
-  margin: 15px 15px 15px 0;
+  margin-right: 15px;
   padding: 15px 40px;
   display: inline-block;
   font-weight: 900;
   text-decoration: none;
 }
 
+.btn:hover {
+  background: gray;
+}
+
 .btn--white {
-  background: white;
+  background: #fff;
   color: black;
 }
 
 .btn--accent {
   background: #ef5839;
-  color: white;
+  color: #fff;
 }
 
 .strong {
