@@ -27,6 +27,7 @@ body {
   flex-direction: row;
   flex-grow: 1;
   border: solid 2px magenta;
+  justify-content: space-between;
 }
 
 .box__container {
@@ -44,4 +45,14 @@ body {
   color: #fff;
 }
 
+.box__column--col-1 {
+  width: 20%;
+}
 
+.box__column--col-2 {
+  width: 45%;
+}
+
+.box__column--col-3 {
+  width: 70%;
+}
