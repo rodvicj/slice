@@ -7,6 +7,7 @@ body {
   box-sizing: border-box;
 }
 
+
 /* Typography */
 
 /* Layout */
@@ -24,11 +25,10 @@ body {
 
 .box__row {
   display: flex;
-  flex-grow: 1;
+  /* flex-grow: 1; */
   border: solid 2px magenta;
   justify-content: space-between;
 }
-
 
 .box__column {
   padding: 1em;
@@ -50,4 +50,18 @@ body {
 
 .box__column--col-3 {
   width: 70%;
+}
+
+
+@media (max-width: 600px) {
+  .box__row {
+    flex-direction: column;
+  }
+
+  .box__column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
 }
