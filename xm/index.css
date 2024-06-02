@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
 }
 
 * {
@@ -31,19 +33,42 @@ body {
   color: white;
 }
 
-.class {
-  background-image: url(images/hero-background.webp);
-  height: 500px;
+.section {
+  background: rgb(13, 25, 45);
+  color: #fff;
 }
 
-/* .hero-background { */
-/*   z-index: 9999; */
-/* } */
+.hero-content {
+  background-image: url(images/hero-background.webp);
+  background-size: cover;
+  background-position: center;
+  padding: 200px 0 250px;
+  background-color: rgba(13, 25, 45, 1);
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-/* .hero-content { */
-/*   position: float; */
-/* } */
+.hero-btn {
+  background: rgb(35, 141, 56);
+  padding: 15px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-/* .section { */
-  /* background: blue; */
-/* } */
+.hero-btn a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.hero-btn--open-account {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.hero-btn:hover {
+  background: green;
+}
