@@ -6,17 +6,44 @@ body {
   box-sizing: border-box;
 }
 
-.container {
+.nav {
   background: #000;
-  padding: 25px;
+  padding: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.nav__container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.nav__items {
+  padding: 1em;
+}
 
 .btn {
   text-decoration: none;
   color: white;
 }
 
-/* .container__header { */
-/*   text-align: center; */
+.class {
+  background-image: url(images/hero-background.webp);
+  height: 500px;
+}
+
+/* .hero-background { */
+/*   z-index: 9999; */
+/* } */
+
+/* .hero-content { */
+/*   position: float; */
+/* } */
+
+/* .section { */
+  /* background: blue; */
 /* } */

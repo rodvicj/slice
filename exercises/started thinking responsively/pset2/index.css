@@ -1,45 +1,41 @@
 body {
   margin: 0;
+  font-family: 'Ubuntu', sans-serif;
   font-size: 1.125rem;
+
 }
 
 * {
   box-sizing: border-box;
 }
 
-.nav {
-  display: flex;
-  flex-direction: column;
-  width: 95%;
-  margin: 0 auto;
-  align-items: center;
-  border: 2px solid blue;
+.header {
   padding: 2em;
-}
-
-.nav__title,
-.nav__subtitle {
-  margin: 0;
-  padding: 0;
-}
-
-.nav__title {
-  color: #143774;
-  font-size: 3.375rem;
-  font-family: 'Lora';
-}
-
-.nav__subtitle {
-  color: #1792d2;
-  font-size: 1rem;
-  font-family: 'Ubuntu bold';
-}
-
-.nav__container {
+  border: 2px solid blue;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid pink;
+}
+
+.header__container {
+  border:  1px solid pink;
+  text-align: center;
+}
+
+
+.header__title {
+  margin: 0;
+  color: #143774;
+  font-size: 2rem;
+  font-family: 'Lora';
+  font-weight: 400;
+}
+
+.header__subtitle {
+  margin: 0;
+  color: #1792d2;
+  font-size: 0.75rem;
+  /* font-family: 'Ubuntu bold'; */
 }
 
 .nav__ul {
@@ -51,16 +47,28 @@ body {
 .nav__link {
   text-decoration: none;
   color: #707070;
-  font-family: 'Ubuntu bold';
+  /* font-family: 'Ubuntu bold'; */
   font-size: 1rem;
 }
 
 .nav__link:hover {
-  text-decoration: underline;
+  color: #1792d2;
+}
+
+.nav__link:focus {
+  color: #1792d2;
 }
 
 .nav__li {
-  list-style-type: none;
+  list-style: none;
   /* width: 30%; */
   padding: 0.5em;
+}
+
+.current-page {
+  border-bottom: 1px solid #707070;
+}
+
+.current-page:hover {
+  color: #707070;
 }
