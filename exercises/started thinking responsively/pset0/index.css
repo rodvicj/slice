@@ -24,20 +24,15 @@ body {
 
 .box__row {
   display: flex;
-  flex-direction: row;
   flex-grow: 1;
   border: solid 2px magenta;
   justify-content: space-between;
 }
 
-.box__container {
-  display: flex;
-  padding: 1em;
-  border: 2px solid #f00;
-}
 
 .box__column {
-  flex-direction: column;
+  padding: 1em;
+  border: 2px solid #f00;
 }
 
 .box__column--bg {
