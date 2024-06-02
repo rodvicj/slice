@@ -7,7 +7,6 @@ body {
   box-sizing: border-box;
 }
 
-
 /* Typography */
 
 /* Layout */
@@ -35,6 +34,12 @@ body {
   border: 2px solid #f00;
 }
 
+@media (max-width: 600px) {
+  .box__row {
+    flex-direction: column;
+  }
+}
+
 .box__column--bg {
   background: #212614;
   color: #fff;
@@ -52,16 +57,11 @@ body {
   width: 70%;
 }
 
-
 @media (max-width: 600px) {
-  .box__row {
-    flex-direction: column;
-  }
 
-  .box__column {
-    display: flex;
-    flex-direction: column;
+  .box__column--col-1,
+  .box__column--col-2,
+  .box__column--col-3 {
     width: 100%;
   }
-  
 }
