@@ -105,3 +105,13 @@ body {
   color: #707070;
 }
 
+.article-main__container {
+  padding: 3em 0;
+}
+
+.article-main__image {
+  width: 100%;
+}
+
+/* .article-preview__container { */
+/* } */
