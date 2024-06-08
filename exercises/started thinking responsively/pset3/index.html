@@ -15,12 +15,12 @@
 
 <body>
   <header class="header">
-    <div class="container">
-      <div class="header__container">
+    <div class="header__container">
+      <div class="header-name__wrapper">
         <h1 class="header__title">Living the simple life</h1>
         <p class="header__subtitle">A BLOG EXPLORING MINIMALISM IN LIFE</p>
       </div>
-      <nav class="nav">
+      <nav class="header__nav">
         <ul class="nav__ul">
           <li class="nav__li"><a class="nav__link current-page" href="#">HOME</a></li>
           <li class="nav__li"><a class="nav__link" href="#">ABOUT ME</a></li>
@@ -29,79 +29,86 @@
       </nav>
     </div>
   </header>
-  <main role="main">
-    <div class="article-main__container">
-      <img src="images/life.jpg" alt="life" class="article-main__image" />
-      <p class="article-main__info">July 23, 2019 | 3 comments</p>
-      <h2 class="article-main__title">Finding simplicity in life</h2>
-      <p class="article-main__content">
-        <strong>Life can get complicated really quickly</strong>, but it doesn't have to be! There are many ways to
-        simplify your life, <a href="#">a few of which we've explored in the past</a>. This week we're taking a bit of
-        a approach though, in how you can find simplicity in the life you already living.
-      </p>
-      <a href="#" class="continue-reading">CONTINUE READING</a>
-    </div>
-    <div class="article-preview__container">
-      <div class="article-preview__left-pane">
-        <img src="images/life.jpg" alt="life" class="article-preview__image" />
-        <p class="article-preview__info">July 19, 2019 | 3 comments</p>
-      </div>
-      <!-- TODO: continue naming classes -->
-      <div class="article-preview__">
-        <h2 class="article-preview__title">How to keep your cooking simple</h2>
-        <p class="article-preview__content">
-          Food is a very important part of everyone's life. If you want to be healthy, you have to eat healthy. One
-          of the easiest ways to do that is to keep your cooking nice and simple.
+  <div class="main__container">
+    <main class="main__wrapper" role="main">
+      <div class="article-main__container">
+        <img class="article-main__image" src="images/life.jpg" alt="life" />
+        <p class="article-main__info">July 23, 2019 | 3 comments</p>
+        <h2 class="article-main__title">Finding simplicity in life</h2>
+        <p class="article-main__content">
+          <strong>Life can get complicated really quickly</strong>, but it doesn't have to be! There are many ways to
+          simplify your life, <a href="#">a few of which we've explored in the past</a>. This week we're taking a bit of
+          a approach though, in how you can find simplicity in the life you already living.
         </p>
-        <a href="#" class="article-preview__continue-reading">CONTINUE READING</a>
+        <a href="#" class="continue-reading">CONTINUE READING</a>
       </div>
-    </div>
+      <div class="article-preview__container">
+        <div class="article-preview__left-pane">
+          <img class="article-preview__image" src="images/food.jpg" alt="life" />
+          <p class="article-preview__info">July 19, 2019 | 3 comments</p>
+        </div>
+        <div class="article-preview__main-pane">
+          <h2 class="article-preview__title">How to keep your cooking simple</h2>
+          <p class="article-preview__content">
+            Food is a very important part of everyone's life. If you want to be healthy, you have to eat healthy. One
+            of the easiest ways to do that is to keep your cooking nice and simple.
+          </p>
+          <a href="#" class="article-preview__continue-reading continue-reading">CONTINUE READING</a>
+        </div>
+      </div>
+      <div class="article-preview__container">
+        <div class="article-preview__left-pane">
+          <img class="article-preview__image" src="images/work.jpg" alt="life" />
+          <p class="article-preview__info">July 12, 2019 | 3 comments</p>
+        </div>
+        <div class="article-preview__main-pane">
+          <h2 class="article-preview__title">Simplicity and work</h2>
+          <p class="article-preview__content">
+            Work is often a major source of stress. People get frustrated, it ruins their relationship with others and
+            it leads to burnout. By keeping your work life as simple as possible, it will help balance everything out.
+          </p>
+          <a href="#" class="article-preview__continue-reading continue-reading">CONTINUE READING</a>
+        </div>
+      </div>
+      <div class="article-preview__container">
+        <div class="article-preview__left-pane">
+          <img class="article-preview__image" src="images/deco.jpg" alt="life" />
+          <p class="article-preview__info">July 3, 2019 | 3 comments</p>
+        </div>
+        <div class="article-preview__main-pane">
+          <h2 class="article-preview__title">Simple decorations</h2>
+          <p class="article-preview__content"> A home isn't a home until you've decorated a little. People either don't
+            decorate, or they go overboard
+            and it doesn't have the impact they were hoping for. Staying simple will help draw the eye where you want
+            it to and make things pop like never before.
+          </p>
+          <a href="#" class="article-preview__continue-reading continue-reading">CONTINUE READING</a>
+        </div>
+      </div>
+    </main>
+    <aside class="side-pane__container">
+      <div class="about-me__container">
+        <h2 class="about-me__title">ABOUT ME</h2>
+        <img class="side-pane__image" src="images/about-me.jpg" alt="life">
+        <p>I find life better, and I'm happier, when things are nice and simple.</p>
+      </div>
+      <div class="recent-posts__container">
+        <div class="recent-posts__wrapper">
+          <img class="recent-posts__image" src="images/food.jpg" alt="life" class="recent-posts__image">
+          <h3 class="recent-posts__title">Keeping cooking simple</h3>
+        </div>
+        <div class="recent-posts__wrapper">
+          <img class="recent-posts__image" src="images/work.jpg" alt="life" class="recent-posts__image">
+          <h3 class="recent-posts__title">Simplicity and work</h3>
+        </div>
+        <div class="recent-posts__wrapper">
+          <img class="recent-posts__image" src="images/deco.jpg" alt="life" class="recent-posts__image">
+          <h3 class="recent-posts__title">Simple decorations</h3>
+        </div>
+      </div>
 
-    <div class="article-preview__container">
-      <img src="images/life.jpg" alt="life" class="article-preview__image" />
-      <p class="article-preview__info">July 12, 2019 | 3 comments</p>
-      <h2 class="article-preview__title">Simplicity and work</h2>
-      <p class="article-preview__content">
-        Work is often a major source of stress. People get frustrated, it ruins their relationship with others and
-        it leads to burnout. By keeping your work life as simple as possible, it will help balance everything out.
-      </p>
-      <a href="#" article-preview__continue-reading">CONTINUE READING</a>
-    </div>
-
-    <div class="article-preview__container">
-      <img src="images/life.jpg" alt="life" class="article-preview__image" />
-      <p class="article-preview__info">July 3, 2019 | 3 comments</p>
-      <h2 class="article-preview__title">Simple decorations</h2>
-      <p class="article-preview__content"> A home isn't a home until you've decorated a little. People either don't
-        decorate, or they go overboard
-        and it doesn't have the impact they were hoping for. Staying simple will help draw the eye where you want
-        it to and make things pop like never before.
-      </p>
-      <a href="#" class="article-preview__continue-reading">CONTINUE READING</a>
-    </div>
-  </main>
-  <aside class="side-pane">
-    <div class="about-me">
-      <h2 class="about-me__title">ABOUT ME</h2>
-      <img src="images/life.jpg" alt="life">
-      <p>I find life better, and I'm happier, when things are nice and simple.</p>
-    </div>
-    <div class="recent-posts__container">
-      <div class="recent-posts__wrapper">
-        <img src="images/life.jpg" alt="life" class="recent-posts__image">
-        <h3 class="recent-posts__title">Keeping cooking simple</h3>
-      </div>
-      <div class="recent-posts__wrapper">
-        <img src="images/life.jpg" alt="life" class="recent-posts__image">
-        <h3 class="recent-posts__title">Simplicity and work</h3>
-      </div>
-      <div class="recent-posts__wrapper">
-        <img src="images/life.jpg" alt="life" class="recent-posts__image">
-        <h3 class="recent-posts__title">Simple decorations</h3>
-      </div>
-    </div>
-
-  </aside>
+    </aside>
+  </div>
 </body>
 
 </html>
