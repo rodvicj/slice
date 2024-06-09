@@ -173,19 +173,48 @@ body {
   height: 5em;
 }
 
+.article-preview__info {
+  margin: 0;
+  padding: 0.25em 0 0.25em 0.25em;
+}
+
 .side-pane__container {
   width: 10%;
   padding: 2em 0;
   border: 2px solid blue;
 }
 
+.article-preview__main-pane {
+  padding: 1em;
+}
+
+.article-preview__image-wrapper {
+  display: flex;
+  width: 175px;
+  overflow: hidden;
+}
+
+.flex-justify-center {
+  justify-content: center;
+}
+
+.flex-justify-start {
+  justify-content: flex-start;
+}
+
 .article-preview__image {
-  width: 10em;
+  height: 200px;
   contain: cover;
 }
 
-.side-pane__image {
-  width: 100%;
+.about-me__image-wrapper {
+  display: flex;
+  height: 100px;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.about-me__image {
   contain: cover;
 }
 
@@ -202,4 +231,29 @@ body {
 
 .recent-posts__container {
   border: 20px solid #ebebeb;
+}
+
+.about-me__title {
+  font-family: 'Ubuntu';
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.recent-posts__title {
+  font-family: 'Ubuntu';
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin: 0 auto;
+  padding: 0.25em;
+}
+
+.recent-post__subheading {
+  font-family: 'Ubuntu';
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+ 
+.recent-posts__wrapper {
+  margin: 0;
+  padding: 0.5em;
 }

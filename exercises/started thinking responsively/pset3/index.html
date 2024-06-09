@@ -37,14 +37,16 @@
         <h2 class="article-main__title">Finding simplicity in life</h2>
         <p class="article-main__content">
           <strong>Life can get complicated really quickly</strong>, but it doesn't have to be! There are many ways to
-          simplify your life, <a href="#">a few of which we've explored in the past</a>. This week we're taking a bit of
-          a approach though, in how you can find simplicity in the life you already living.
+          simplify your life, <a href="#">a few of which we've explored in the past</a>. This week we're taking a bit
+          of a approach though, in how you can find simplicity in the life you already living.
         </p>
         <a href="#" class="continue-reading">CONTINUE READING</a>
       </div>
       <div class="article-preview__container">
         <div class="article-preview__left-pane">
-          <img class="article-preview__image" src="images/food.jpg" alt="life" />
+          <div class="article-preview__image-wrapper flex-justify-center">
+            <img class="article-preview__image" src="images/food.jpg" alt="life" />
+          </div>
           <p class="article-preview__info">July 19, 2019 | 3 comments</p>
         </div>
         <div class="article-preview__main-pane">
@@ -58,7 +60,9 @@
       </div>
       <div class="article-preview__container">
         <div class="article-preview__left-pane">
-          <img class="article-preview__image" src="images/work.jpg" alt="life" />
+          <div class="article-preview__image-wrapper flex-justify-center">
+            <img class="article-preview__image" src="images/work.jpg" alt="life" />
+          </div>
           <p class="article-preview__info">July 12, 2019 | 3 comments</p>
         </div>
         <div class="article-preview__main-pane">
@@ -72,13 +76,15 @@
       </div>
       <div class="article-preview__container">
         <div class="article-preview__left-pane">
-          <img class="article-preview__image" src="images/deco.jpg" alt="life" />
+          <div class="article-preview__image-wrapper flex-justify-start">
+            <img class="article-preview__image" src="images/deco.jpg" alt="life" />
+          </div>
           <p class="article-preview__info">July 3, 2019 | 3 comments</p>
         </div>
         <div class="article-preview__main-pane">
           <h2 class="article-preview__title">Simple decorations</h2>
-          <p class="article-preview__content"> A home isn't a home until you've decorated a little. People either don't
-            decorate, or they go overboard
+          <p class="article-preview__content">
+            A home isn't a home until you've decorated a little. People either don't decorate, or they go overboard
             and it doesn't have the impact they were hoping for. Staying simple will help draw the eye where you want
             it to and make things pop like never before.
           </p>
@@ -89,24 +95,30 @@
     <aside class="side-pane__container">
       <div class="about-me__container">
         <h2 class="about-me__title">ABOUT ME</h2>
-        <img class="side-pane__image" src="images/about-me.jpg" alt="life">
+        <div class="about-me__image-wrapper">
+          <img class="about-me__image" src="images/about-me.jpg" alt="life" />
+        </div>
         <p>I find life better, and I'm happier, when things are nice and simple.</p>
       </div>
       <div class="recent-posts__container">
+        <h2 class="recent-posts__title">RECENT POSTS</h2>
         <div class="recent-posts__wrapper">
-          <img class="recent-posts__image" src="images/food.jpg" alt="life" class="recent-posts__image">
-          <h3 class="recent-posts__title">Keeping cooking simple</h3>
+          <img class="recent-posts__image" src="images/food.jpg" alt="life" class="recent-posts__image" />
+          <h3 class="recent-post__subheading">Keeping cooking simple</h3>
         </div>
+        <div style="border: 1px solid #707070; margin: 0 auto; width: 80%"></div>
         <div class="recent-posts__wrapper">
-          <img class="recent-posts__image" src="images/work.jpg" alt="life" class="recent-posts__image">
-          <h3 class="recent-posts__title">Simplicity and work</h3>
+          <img class="recent-posts__image" src="images/work.jpg" alt="life" class="recent-posts__image" />
+          <h3 class="recent-post__subheading">Simplicity and work</h3>
         </div>
+        <div style="border: 1px solid #707070; margin: 0 auto; width: 80%"></div>
         <div class="recent-posts__wrapper">
-          <img class="recent-posts__image" src="images/deco.jpg" alt="life" class="recent-posts__image">
-          <h3 class="recent-posts__title">Simple decorations</h3>
+          <div class="recent-posts__wrapper">
+            <img class="recent-posts__image" src="images/deco.jpg" alt="life" class="recent-posts__image" />
+            <h3 class="recent-post__subheading">Simple decorations</h3>
+          </div>
         </div>
       </div>
-
     </aside>
   </div>
 </body>
