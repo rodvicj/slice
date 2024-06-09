@@ -129,17 +129,16 @@ body {
 }
 
 .main__container {
-  display: flex;
-  justify-content: center;
+  /* display: flex; */
+  /* justify-content: center; */
   border: 2px solid #f00;
   padding: 2em 0;
 }
 
-/* TODO: continue with fixing padding of main */
 .main__wrapper {
   display: flex;
   flex-direction: column;
-  width: 35%;
+  /* width: 35%; */
   padding: 2em;
   border: 2px solid green;
 }
@@ -179,7 +178,7 @@ body {
 }
 
 .side-pane__container {
-  width: 10%;
+  /* width: 10%; */
   padding: 2em 0;
   border: 2px solid blue;
 }
@@ -252,8 +251,35 @@ body {
   font-size: 0.75rem;
   font-weight: 700;
 }
- 
+
 .recent-posts__wrapper {
   margin: 0;
   padding: 0.5em;
+}
+
+@media (min-width: 675px) {
+  .main__container {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 900px) {
+  .side-pane__container {
+    width: 20%;
+  }
+
+  .main__wrapper {
+    width: 65%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .side-pane__container {
+    width: 15%;
+  }
+
+  .main__wrapper {
+    width: 45%;
+  }
 }
