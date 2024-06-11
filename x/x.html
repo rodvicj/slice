@@ -1,102 +1,103 @@
 <!doctype html>
 <html lang="en">
+    <head>
+        <title>slicing</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
 
-<head>
-  <title>slicing</title>
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+            .container {
+                display: flex;
+                flex-direction: row;
+                margin: 1em;
+                border: 1px solid black;
+            }
 
-    .container {
-      display: flex;
-      flex-direction: row;
-      margin: 1em;
-      border: 1px solid black;
-    }
+            .container__sub {
+                display: flex;
+                flex-direction: column;
+            }
 
-    .container__sub {
-      display: flex;
-      flex-direction: column;
-    }
+            .container__sentence {
+                margin: 1em;
+                padding: 1em;
+                border: 2px solid red;
+            }
 
-    .container__sentence {
-      margin: 1em;
-      padding: 1em;
-      border: 2px solid red;
-    }
+            .container__sentence__item {
+                padding: 1rem;
+                margin: 1rem;
+                border: 2px solid black;
+            }
 
-    .container__sentence__item {
-      padding: 1rem;
-      margin: 1rem;
-      border: 2px solid black;
-    }
+            .container__link {
+                color: blue;
+                text-decoration: none;
+            }
 
-    .container__link {
-      color: blue;
-      text-decoration: none;
-    }
+            .container__link:hover {
+                color: red;
+            }
 
-    .container__link:hover {
-      color: red;
-    }
+            /* .container__link:visited { */
+            /*   color: orange; */
+            /* } */
+        </style>
+    </head>
 
-    /* .container__link:visited { */
-    /*   color: orange; */
-    /* } */
-  </style>
-</head>
-
-<body>
-  <div class="container">
-    <div class="container__sub">
-      <div class="container__sentence" style="border: 1px solid blue; display: flex; flex-direction: column">
-        <div class="container__sentence__item">
-          1. Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi
-          Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit
-          nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud
-          officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia
-          dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in
-          Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim.
-          Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.
+    <body>
+        <div class="container">
+            <div class="container__sub">
+                <div class="container__sentence" style="border: 1px solid blue; display: flex; flex-direction: column">
+                    <div class="container__sentence__item">
+                        1. Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint
+                        ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia.
+                        Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla
+                        est proident. Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat
+                        reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa
+                        proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua
+                        reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat
+                        ullamco ut ea consectetur et est culpa et culpa duis.
+                    </div>
+                    <p class="container__sentence__item">
+                        Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur
+                        cupidatat.
+                    </p>
+                    <a class="container__link" href="#">rodvicj</a>
+                </div>
+                <div class="container__sentence" style="border: 1px solid blue">
+                    Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur
+                    cupidatat.
+                </div>
+            </div>
+            <div class="container__sentence">
+                2. Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi
+                Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit
+                nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud
+                officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia
+                dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris
+                ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit
+                enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.
+            </div>
+            <div class="container__sentence">
+                3. Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi
+                Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit
+                nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud
+                officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia
+                dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris
+                ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit
+                enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.
+            </div>
+            <div class="container__sentence">
+                4. Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi
+                Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit
+                nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud
+                officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia
+                dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris
+                ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit
+                enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.
+            </div>
         </div>
-        <p class="container__sentence__item">
-          Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.
-        </p>
-        <a class="container__link" href="#">rodvicj</a>
-      </div>
-      <div class="container__sentence" style="border: 1px solid blue">
-        Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.
-      </div>
-    </div>
-    <div class="container__sentence">
-      2. Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem
-      pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud
-      ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut
-      officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris
-      cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia
-      eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat
-      ullamco ut ea consectetur et est culpa et culpa duis.
-    </div>
-    <div class="container__sentence">
-      3. Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem
-      pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud
-      ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut
-      officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris
-      cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia
-      eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat
-      ullamco ut ea consectetur et est culpa et culpa duis.
-    </div>
-    <div class="container__sentence">
-      4. Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem
-      pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud
-      ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut
-      officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris
-      cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia
-      eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat
-      ullamco ut ea consectetur et est culpa et culpa duis.
-    </div>
-  </div>
-</body>
-
+    </body>
 </html>
