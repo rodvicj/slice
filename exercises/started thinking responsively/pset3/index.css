@@ -128,6 +128,12 @@ img {
   }
 }
 
+/* Main */
+
+.main__wrapper {
+  padding: 0.25em;
+}
+
 .current-page:hover {
   color: #707070;
 }
@@ -136,11 +142,12 @@ img {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding-bottom: 3em;
+  border-bottom: 2px solid #707070;
+  padding-bottom: 1em;
 }
 
 .article-preview__container {
-  padding-bottom: 1.5em;
+  padding: 0.75em 0;
   display: block;
   width: 100%;
 }
@@ -172,34 +179,67 @@ img {
   border: 20px solid #ebebeb;
 }
 
+.recent-posts__container-wrapper {
+  padding: 1em;
+}
+
 .about-me__title {
   font-family: 'Ubuntu';
   font-weight: 700;
   font-size: 1.125rem;
+  margin: 0 0 1em;
+}
+
+.about-me__content {
+  margin: 0;
+  padding: 0.5em 0 1em;
 }
 
 .recent-posts__title {
   font-family: 'Ubuntu';
   font-weight: 700;
   font-size: 1.125rem;
-  margin: 0 auto;
-  padding: 0.25em;
+  margin: 0 0 1em;
+  padding: 0;
 }
 
 .recent-post__subheading {
   font-family: 'Ubuntu';
   font-size: 0.75rem;
   font-weight: 700;
+  margin: 0;
+  padding: 0.5em 0 1em;
 }
 
-.recent-posts__wrapper {
+.recent-post__container {
   margin: 0;
-  padding: 0.5em;
+  padding: 0.5em 0;
+}
+
+.recent-post__image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3em;
+  width: 100%;
+  overflow: hidden;
+}
+
+.recent-post__image {
+  object-fit: cover;
+}
+
+.recent-post__seperator {
+  border: 1px solid #ebebeb;
 }
 
 @media (min-width: 320px) {
   .main__container {
     padding: 0.5em;
+  }
+
+  .recent-post__image-wrapper {
+    height: 5em;
   }
 }
 
@@ -233,8 +273,14 @@ img {
 
 @media (min-width: 1200px) {
   .main__container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     padding: 5em;
+  }
+}
+
+@media (min-width: 1440px) {
+  .main__container {
+    width: 80%;
   }
 }
