@@ -216,16 +216,10 @@ img {
   padding: 0.5em 0;
 }
 
-.recent-post__image-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 3em;
-  width: 100%;
-  overflow: hidden;
-}
 
 .recent-post__image {
+  height: 3em;
+  width: 100%;
   object-fit: cover;
 }
 
@@ -238,7 +232,7 @@ img {
     padding: 0.5em;
   }
 
-  .recent-post__image-wrapper {
+  .recent-post__image {
     height: 5em;
   }
 }
@@ -277,10 +271,16 @@ img {
     margin: 0 auto;
     padding: 5em;
   }
+
 }
 
 @media (min-width: 1440px) {
+
   .main__container {
     width: 80%;
+  }
+
+  .recent-post__image {
+    height: 7em;
   }
 }
