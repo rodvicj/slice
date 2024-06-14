@@ -39,43 +39,26 @@ body {
   color: white;
 }
 
-/* .section { */
-/* background: rgb(13, 25, 45); */
-/* color: #fff; */
-/* } */
-
 .section--hero {
   background: rgb(13, 25, 45);
   color: #fff;
-}
-
-.container {
-  margin: 0 10%;
-  max-width: 80%;
-  margin: 0 auto;
 }
 
 .container--hero {
   background-image: url(images/hero-background.webp);
   background-size: cover;
   background-position: center;
-  padding: 200px 0 250px;
   background-color: rgba(13, 25, 45, 1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.container--app {
-  display: flex;
+  text-align: center;
+  padding: 5em .5em;
 }
 
 .hero-btn {
+  margin: 0 auto;
   background: rgb(35, 141, 56);
   padding: 15px 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 20em;
+  text-align: center;
 }
 
 .hero-btn a {
@@ -90,4 +73,9 @@ body {
 
 .hero-btn:hover {
   background: green;
+}
+
+.container--app {
+  width: 100%;
+  /* margin: 0 auto; */
 }
