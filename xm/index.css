@@ -46,11 +46,13 @@ body {
 
 .container--hero {
   background-image: url(images/hero-background.webp);
+  width: 80%;
+  margin: 0 auto;
   background-size: cover;
   background-position: center;
   background-color: rgba(13, 25, 45, 1);
   text-align: center;
-  padding: 5em .5em;
+  padding: 5em 0.5em;
 }
 
 .hero-btn {
@@ -78,4 +80,10 @@ body {
 .container--app {
   width: 100%;
   /* margin: 0 auto; */
+}
+
+@media (min-width: 768px) {
+  .container--hero {
+    width: 100%;
+  }
 }
