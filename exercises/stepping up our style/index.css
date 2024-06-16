@@ -19,14 +19,16 @@ body {
 
 .main__title-highlight {
   color: #ffffff;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 .main__subtitle {
+  text-align: center;
   color: rgba(255, 165, 0, 0.8);
-  font-size: 1.7rem;
-  font-weight: 700;
+  font-size: 1rem;
+  font-weight: 900;
   letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .sign-up__first-name,
@@ -39,12 +41,25 @@ body {
   text-align: center;
 }
 
-
 .sign-up__notice {
-  margin: 0;
-  margin-top: 1.5em;
+  text-align: center;
+  margin: 1.5em 0 5em;
   font-size: 0.75rem;
   font-weight: 400;
+}
+
+.body__title {
+  font-weight: 900;
+}
+
+.body__subtitle {
+  color: rgba(255, 136, 50, 0.85);
+  font-weight: 900;
+}
+
+.body__paragraph {
+  font-weight: 400;
+  line-height: 1.8;
 }
 
 /* Layout */
@@ -58,7 +73,7 @@ body {
 .image__container {
   padding: 1em;
   width: 100%;
-  height: 480px;
+  min-height: 480px;
   background-image: url(images/dark-ribs.jpg);
   display: flex;
   flex-direction: column;
@@ -91,11 +106,11 @@ body {
 }
 
 .sign-up__register-btn {
-  background: rgba(255, 165, 0, 0.75);
+  background-image: linear-gradient(to left, #ff713b, #ffa51d);
   border: none;
   border-radius: 0.5em;
   color: rgba(255, 255, 255, 0.9);
-  font-weight: 700;
+  font-weight: 900;
 }
 
 @media (min-width: 768px) {
@@ -111,6 +126,10 @@ body {
 
   .body__container {
     width: 30%;
+  }
+
+  .main__subtitle {
+    font-size: 1.25rem;
   }
 }
 
