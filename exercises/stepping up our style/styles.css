@@ -10,10 +10,9 @@ body {
 /* Typography */
 
 .main__title {
-  text-align: center;
   color: rgba(255, 255, 255, 0.85);
   font-weight: 400;
-  font-size: 3rem;
+  font-size: 2rem;
   letter-spacing: 2px;
 }
 
@@ -23,7 +22,6 @@ body {
 }
 
 .main__subtitle {
-  text-align: center;
   color: rgba(255, 165, 0, 0.8);
   font-size: 1rem;
   font-weight: 900;
@@ -42,7 +40,6 @@ body {
 }
 
 .sign-up__notice {
-  text-align: center;
   margin: 1.5em 0 5em;
   font-size: 0.75rem;
   font-weight: 400;
@@ -75,13 +72,14 @@ body {
   width: 100%;
   min-height: 480px;
   background-image: url(images/dark-ribs.jpg);
+  background-color: #707070;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
   background-size: cover;
-  /* background-position: center; */
+  text-align: center;
 }
 
 .body__container {
@@ -89,12 +87,12 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 1em;
+  text-align: center;
 }
 
 .sign-up__form {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .sign-up__input-container {
@@ -113,27 +111,32 @@ body {
   font-weight: 900;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 520px) {
   .main__container {
     flex-direction: row;
   }
 
   .image__container {
     /* padding: 5em; */
-    width: 70%;
+    width: 65%;
     height: 720px;
   }
 
   .body__container {
-    width: 30%;
+    width: 35%;
+    padding: 0.5em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main__title {
+    font-size: 3rem;
   }
 
   .main__subtitle {
     font-size: 1.25rem;
   }
-}
 
-@media (min-width: 1024px) {
   .image__container {
     width: 70%;
     height: 960px;
