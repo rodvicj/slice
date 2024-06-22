@@ -308,13 +308,44 @@ body {
   padding: 2em 1em;
 }
 
+/* MP sponsor banner */
+
+.MP-sponsor__container {
+  /* display: flex; */
+  /* justify-content: space-evenly; */
+  display: none;
+  background-image: url(images/manny-sponsorship-bg.png);
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  /* padding: 0 1em; */
+}
+
+.MP-sponsor__image-wrapper {
+  /* margin-top: -70px; */
+  margin-top: -4em;
+  display: block;
+}
+
+.MP-sponsor__image {
+  display: block;
+  width: 320px;
+}
+
 .footer__link {
   text-decoration: none;
-  color: rgba(170, 170, 170, 0.65);
-  font-weight: 700;
+  color: rgba(200, 200, 200, 0.65);
+  font-weight: 300;
 }
 
 .footer__link:focus,
 .footer__link:hover {
-  color: rgba(20, 20, 20, 0.85);
+  color: rgba(255, 20, 20, 0.85);
+}
+
+@media (min-width: 992px) {
+  .MP-sponsor__container {
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
