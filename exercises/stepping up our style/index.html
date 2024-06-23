@@ -24,10 +24,11 @@
         webinar
       </p>
       <div class="sign-up__container">
-        <form class="sign-up__form">
-          <input class="sign-up__first-name" type="text" placeholder="first name" />
-          <input class="sign-up__last-name" type="text" placeholder="email" />
-          <input class="sign-up__input-container sign-up__register-btn" type="button" value="Register" />
+        <form class="sign-up__form" action="#" method="post">
+          <input class="sign-up__input sign-up__first-name" type="text" placeholder="first name" aria-label="first name"
+            required />
+          <input class="sign-up__input sign-up__email" type="email" placeholder="email" aria-label="email" required />
+          <button class="sign-up__register-btn" type="submit">Register</button>
         </form>
         <p class="sign-up__notice">We'll never share your information without your permission</p>
       </div>
