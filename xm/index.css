@@ -268,6 +268,10 @@ body {
   text-align: center;
 }
 
+.award__subtitle {
+  max-width: 720px;
+}
+
 .awards-box__container {
   display: flex;
   flex-direction: column;
@@ -308,7 +312,7 @@ body {
 /* Footer */
 
 .footer__container {
-  background: rgba(5, 5, 5, 0.75);
+  background: #333;
   color: rgba(200, 200, 200, 0.65);
   padding: 2em 1em;
 }
@@ -348,6 +352,77 @@ body {
   color: rgba(255, 20, 20, 0.85);
 }
 
+.footer__link-border {
+  margin: 0;
+  border: none;
+  border-top: 1px #444 solid;
+}
+
+.footer-links__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 970px;
+  margin: 0 auto;
+}
+
+.footer-soc-med__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 0;
+}
+
+.soc-med-icons__container {
+  /* display: flex; */
+  /* flex-direction: column; */
+  text-align: center;
+}
+
+.soc-med__icons {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.15rem;
+  padding: 0.25em;
+  color: #ccc;
+  width: 2rem;
+}
+
+.soc-med__icons--facebook:hover,
+.soc-med__icons--facebook:active {
+  background: blue;
+}
+
+.soc-med__icons--twitter:hover,
+.soc-med__icons--twitter:active {
+  background: gray;
+}
+
+.soc-med__icons--youtube:hover,
+.soc-med__icons--youtube:active {
+  background: red;
+}
+
+.soc-med__icons--instagram:hover,
+.soc-med__icons--instagram:active {
+  background: darkblue;
+}
+
+.soc-med__icons--linkedin:hover,
+.soc-med__icons--linkedin:active {
+  background: skyblue;
+}
+
+.soc-med__icons--telegram:hover,
+.soc-med__icons--telegram:active {
+  background: skyblue;
+}
+
+.sod-med__follow {
+  /* display: inline-block; */
+  margin: 0;
+  text-align: left;
+}
+
 @media (min-width: 992px) {
   .MP-sponsor__container {
     display: flex;
@@ -358,5 +433,9 @@ body {
 @media (min-width: 1200px) {
   .MP-sponsor__container {
     justify-content: space-evenly;
+  }
+
+  .sod-med__follow {
+    display: inline-block;
   }
 }
