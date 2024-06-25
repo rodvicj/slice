@@ -22,17 +22,38 @@ body {
 
 /* TODO: create a hamburger for this navigation buttons */
 
-/* .nav__container-wrapper { */
-/*   display: flex; */
-/* } */
-
-.nav__button {
-  color: #fff;
-  text-decoration: none;
+.nav__container-wrapper {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  gap: 1em;
 }
 
+/* .nav__button { */
+/*   color: #fff; */
+/*   text-decoration: none; */
+/* } */
+
+  
 .nav__items {
-  padding: 0 2em;
+  padding: 0;
+}
+
+
+.nav__items--small-dots {
+  font-size: 0.35rem;
+  color: #fff;
+  display: flex;
+}
+
+.nav__items--small-dot {
+  padding: 2px;
+}
+
+.nav__items--home-icon {
+  color: #fff;
+  font-size: 1.1rem;
 }
 
 /* Bonus-offer */
@@ -189,6 +210,8 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   /* flex-direction: column; */
+
+  gap: 2em;
 }
 
 .join-item__container {
@@ -439,3 +462,5 @@ body {
     display: inline-block;
   }
 }
+
+/* min-width: 768px nav change */
