@@ -11,29 +11,30 @@
 
 <body>
   <header class="header__container">
-    <div class="header-logo__container">
-      <img class="header-logo__image" src="images/XM-Manny-logo.svg" alt="Manny Pacquiao logo" />
-    </div>
-    <div class="nav__container">
-      <ul class="nav__container-wrapper">
-        <li class="nav__items">
-          <!-- <a class="nav__button" href="#">XM Homepage</a> -->
+    <div class="header__container-wrapper container--max-width">
+      <div class="header-logo__container">
+        <img class="header-logo__image" src="images/XM-Manny-logo.svg" alt="Manny Pacquiao logo" />
+      </div>
+      <div class="nav__container">
+        <ul class="nav__container-wrapper">
+          <li class="nav__items">
+            <span class="nav__button xm__homepage-btn" href="#">XM Homepage</span>
+            <a href="https://www.xm.com" target="_blank">
+              <i class="fa fa-home nav__items--home-icon" aria-hidden="true"></i>
+              <!-- <span class="hidden-xs"> XM Homepage </span> -->
+            </a>
+          </li>
 
-          <a href="https://www.xm.com" target="_blank">
-            <i class="fa fa-home nav__items--home-icon" aria-hidden="true"></i>
-            <!-- <span class="hidden-xs"> XM Homepage </span> -->
-          </a>
-        </li>
-
-        <li class="nav__items">
-          <!-- <a class="nav__button" href="#">English</a> -->
-          <span class="nav__items--small-dots">
-            <i class="fa fa-circle nav__items--small-dot" aria-hidden="true"></i>
-            <i class="fa fa-circle nav__items--small-dot" aria-hidden="true"></i>
-            <i class="fa fa-circle nav__items--small-dot" aria-hidden="true"></i>
-          </span>
-        </li>
-      </ul>
+          <li class="nav__items">
+            <span class="nav__button english-btn" href="#">English</span>
+            <span class="nav__items--small-dots">
+              <i class="fa fa-circle nav__items--small-dot" aria-hidden="true"></i>
+              <i class="fa fa-circle nav__items--small-dot" aria-hidden="true"></i>
+              <i class="fa fa-circle nav__items--small-dot" aria-hidden="true"></i>
+            </span>
+          </li>
+        </ul>
+      </div>
     </div>
   </header>
   <main class="main__container" role="main">
@@ -255,21 +256,12 @@
       <div class="footer__container">
         <div class="footer__container-wrapper container--max-width">
           <div class="footer-soc-med__container">
-            <!-- TODO: change class name, this is temporary -->
-            <div class="footer-soc-med__banners-container">
-              <div>
-                <img class="footer-soc-med__banners" src="images/meta-quotes.png" alt="Meta quotes" />
-              </div>
-              <div>
-                <img class="footer-soc-med__banners" src="images/verisign.png" alt="Verisign" />
-              </div>
-              <div>
-                <img class="footer-soc-med__banners" src="images/unicef.png" alt="Unicef" />
-              </div>
-              <div>
-                <img class="footer-soc-med__banners" src="images/IIP-Platinum-2023-platinum-footer.png"
-                  alt="Investors in people" />
-              </div>
+            <div class="footer-social-banners__container">
+              <img class="footer-social-banner__image" src="images/meta-quotes.png" alt="Meta quotes" />
+              <img class="footer-social-banner__image" src="images/verisign.png" alt="Verisign" />
+              <img class="footer-social-banner__image" src="images/unicef.png" alt="Unicef" />
+              <img class="footer-social-banner__image" src="images/IIP-Platinum-2023-platinum-footer.png"
+                alt="Investors in people" />
             </div>
             <div class="soc-med-icons__container">
               <p class="sod-med__follow">Follow us on</p>
