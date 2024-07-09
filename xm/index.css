@@ -1,7 +1,7 @@
 body {
-  margin: 0;
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
+  margin: 0;
 }
 
 * {
@@ -37,6 +37,7 @@ body {
 
 .header__container {
   background: #000;
+  margin: 0 auto;
 }
 
 .header__container-wrapper {
@@ -44,11 +45,13 @@ body {
   justify-content: center;
   align-items: center;
   justify-content: space-between;
-  padding: 1em;
-  /* height: 10vh; */
+  padding: 1.35em 0;
 }
 
-/* TODO: create a hamburger for this navigation buttons */
+/* .nav__container, */
+.header-logo__container {
+  padding: 0 1em;
+}
 
 .nav__container-wrapper {
   display: flex;
@@ -60,7 +63,7 @@ body {
 
 .xm__homepage-btn {
   display: none;
-  padding-right: 5em;
+  padding-right: 3em;
 }
 
 .english-btn {
@@ -75,8 +78,8 @@ body {
 .nav__items {
   display: flex;
   align-items: center;
-  gap: 0.25em;
-  padding: 0;
+  /* gap: 0.25em; */
+  padding-right: 1em;
 }
 
 .nav__items--small-dots {
@@ -97,15 +100,19 @@ body {
 /* Bonus-offer */
 
 .bonus-offer__container {
-  display: flex;
-  flex-direction: column;
   background-image: url(images/hero-background.webp);
   color: #fff;
   background-size: cover;
   background-position: center;
   background-color: #0d192d;
-  text-align: center;
   padding: 5em 0.5em;
+  margin: 0 auto;
+}
+
+.bonus-offer__container-wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .bonus-offer__banner-heading {
@@ -158,11 +165,15 @@ body {
 /* XM App */
 
 .xm-app__container {
+  margin: 0 auto;
+}
+
+.xm-app__container-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1em;
+  padding: 0 1em;
   margin: 0 auto;
 }
 
@@ -244,14 +255,14 @@ body {
 
 .join__container {
   background: rgba(236, 236, 236, 0.75);
-  display: flex;
-  align-items: center;
+  margin: 0 auto;
+  padding: 0 1em;
 }
 
 .join__container-wrapper {
-  /* text-align: center; */
-  margin: 0 auto;
-  /* padding: 2em; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .join__title,
@@ -338,16 +349,16 @@ body {
 
 /* Awards */
 .award__container {
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+.award__container-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3em 1em;
   text-align: center;
 }
-
-/* .award__container-wrapper { */
-
-/* } */
 
 .award__subtitle {
   max-width: 720px;
@@ -398,22 +409,24 @@ body {
 /* Footer */
 
 .footer__container {
+  margin: 0 auto;
   background: #333;
   color: rgba(200, 200, 200, 0.65);
+}
+
+.footer__container-wrapper {
   padding: 2em 1em;
 }
 
 /* MP sponsor banner */
 
 .MP-sponsor__container {
-  /* display: flex; */
-  /* justify-content: space-between; */
   display: none;
+  margin: 0 auto;
   background-image: url(images/manny-sponsorship-bg.png);
   background-position: center;
   background-size: cover;
   color: #fff;
-  padding: 0 1em;
 }
 
 .MP-sponsor__title {
@@ -561,7 +574,7 @@ body {
     gap: 0.5em;
   }
 
-  .xm-app__container {
+  .xm-app__container-wrapper {
     flex-direction: row;
   }
 
@@ -583,6 +596,7 @@ body {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    padding: 0 1em;
   }
 
   .xm-app__image {
