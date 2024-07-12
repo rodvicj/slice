@@ -3,6 +3,12 @@ body {
   overflow-x: hidden;
 }
 
+main {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
 .tech-tips__body,
 .tech-tips__read-duration {
   font-family: Source Sans Pro;
