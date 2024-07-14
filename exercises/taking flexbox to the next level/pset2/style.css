@@ -15,10 +15,10 @@ main {
 }
 
 .tech-tips__image {
-  display: block;
-  width: 100%;
   object-fit: cover;
-  height: 200px;
+  flex-basis: 200px;
+  min-width: 0;
+  min-height: 0;
 }
 
 .tech-tips__title {
@@ -34,6 +34,7 @@ main {
   flex-direction: column;
   background: #111d4a;
   padding: 1.5em;
+  max-width: 480px;
 }
 
 .tech-tips__body {
@@ -47,6 +48,7 @@ main {
   color: #fff;
   opacity: 0.6;
   margin: 0;
+  line-height: 1;
 }
 
 .tech-tips__read-value {
@@ -87,11 +89,6 @@ main {
   .tech-tips__card-wrapper {
     flex-direction: row;
     max-width: 720px;
-  }
-
-  .tech-tips__image {
-    height: 100%;
-    width: 250px;
   }
 
   .tech-tips__footer {
