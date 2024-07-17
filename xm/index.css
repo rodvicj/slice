@@ -341,23 +341,43 @@ body {
 /* } */
 
 /* Awards */
-.award__container {
+.awards__container {
   margin: 0 auto;
   padding: 0 1em;
-}
-
-.award__container-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 
-.award__subtitle {
-  max-width: 720px;
+.awards__title {
+  font-size: 1.9rem;
+  font-weight: 500;
+  margin: 0;
+  padding: 2.6em 0 0.65em;
+  /* max-width: 720px; */
 }
 
-.awards-box__container {
+.awards__subtitle {
+  line-height: 1.4;
+  margin: 0;
+  padding-bottom: 4.7em;
+}
+
+.award-box__image {
+  display: block;
+  width: 100%;
+  max-width: 100px;
+}
+
+/* .award__container-wrapper { */
+/*   display: flex; */
+/*   flex-direction: column; */
+/*   align-items: center; */
+/*   text-align: center; */
+/* } */
+
+.awards__box-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -365,7 +385,7 @@ body {
   gap: 1em;
 }
 
-.award-box__container {
+.award__box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -378,10 +398,10 @@ body {
   border-radius: 10px;
 }
 
-.award-box__border {
+.award-box__line-border {
   border: 1px solid #000;
   margin: 0 3em;
-  border-radius: 1em;
+  width: 50px;
 }
 
 .award-box__event-title {
@@ -391,7 +411,7 @@ body {
 
 .award-box__title {
   font-size: 0.75rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .award-box__event-title {
@@ -570,11 +590,6 @@ body {
     font-size: 0.35rem;
   }
 
-  .awards-box__container {
-    flex-direction: row;
-    gap: 0.5em;
-  }
-
   .xm-app__container {
     color: #252525;
     flex-direction: row;
@@ -613,13 +628,6 @@ body {
     flex-wrap: wrap;
   }
 
-  .award-box__container {
-    height: 220px;
-    min-width: 140px;
-    padding: 0;
-    width: 100%;
-  }
-
   .bonus-offer__info {
     display: block;
   }
@@ -649,6 +657,23 @@ body {
   .join-item__container {
     /* padding: 0 3em; */
     width: 45%;
+  }
+
+  .awards__container {
+    padding: 0;
+  }
+
+  .awards__box-wrapper {
+    flex-direction: row;
+    align-items: baseline;
+    gap: 0;
+  }
+
+  .award__box {
+    height: 220px;
+    width: 150px;
+    /* padding: 0 0.25em; */
+    padding: 0;
   }
 }
 
@@ -706,6 +731,19 @@ body {
   .join__container-wrapper {
     padding: 0;
   }
+
+  .awards__box-wrapper {
+    gap: 2em;
+  }
+
+  .award__box {
+    min-width: 150px;
+    width: 100%;
+  }
+
+  .award-box__image {
+    max-width: 100%;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -720,5 +758,9 @@ body {
 
   .bonus-offer__wrapper {
     max-width: 1140px;
+  }
+
+  .awards__box-wrapper {
+    gap: 5em;
   }
 }
