@@ -367,7 +367,6 @@ body {
 .award-box__image {
   display: block;
   width: 100%;
-  max-width: 100px;
 }
 
 /* .award__container-wrapper { */
@@ -424,7 +423,7 @@ body {
 .footer__container {
   margin: 0 auto;
   background: #333;
-  color: rgba(200, 200, 200, 0.65);
+  color: #888;
 }
 
 .footer__container-wrapper {
@@ -475,7 +474,6 @@ body {
 .footer__link {
   text-decoration: none;
   color: rgba(200, 200, 200, 0.65);
-  font-weight: 300;
   font-size: 0.75rem;
   font-weight: 400;
 }
@@ -483,6 +481,11 @@ body {
 .footer__link:focus,
 .footer__link:hover {
   color: rgba(255, 20, 20, 0.85);
+}
+
+.footer__info {
+  font-weight: 500;
+  font-size: 0.75rem;
 }
 
 .footer__link-border {
@@ -666,7 +669,7 @@ body {
   .awards__box-wrapper {
     flex-direction: row;
     align-items: baseline;
-    gap: 0;
+    gap: 0.25em;
   }
 
   .award__box {
