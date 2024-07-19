@@ -20,30 +20,30 @@
   <div style="overflow-x: hidden">
     <header class="header__container">
       <div class="header__wrapper container--max-width">
-        <div class="header-logo__wrapper">
+        <div class="header__logo">
           <a href="https://www.xm.com" target="_blank">
-            <img class="header-logo__image" src="images/XM-Manny-logo.svg" alt="Manny Pacquiao logo" />
+            <img class="header__logo-image" src="images/XM-Manny-logo.svg" alt="Manny Pacquiao logo" />
           </a>
         </div>
-        <ul class="header-nav__wrapper">
-          <li class="header-nav__items">
-            <span class="header-nav__button header-xm__homepage-btn" href="#">XM Homepage</span>
-            <a style="display: flex; align-items: center" href="https://www.xm.com" target="_blank">
+        <ul class="header__nav-wrapper">
+          <li class="header__nav-items">
+            <a class="header__xm-homepage-btn" href="#">XM Homepage</a>
+            <a class="header__home-btn" href="https://www.xm.com" target="_blank">
               <i class="fa fa-home nav__items--home-icon" aria-hidden="true"></i>
             </a>
           </li>
-          <li class="header-nav__items">
-            <span class="header-nav__button header-english-btn" href="#">English</span>
-            <span class="header-nav__small-dots">
-              <i class="fa fa-circle header-nav__small-dot" aria-hidden="true"></i>
-              <i class="fa fa-circle header-nav__small-dot" aria-hidden="true"></i>
-              <i class="fa fa-circle header-nav__small-dot" aria-hidden="true"></i>
+          <li class="header__nav-items">
+            <span class="header__english-btn" href="#">English</span>
+            <span class="header__nav-dots">
+              <i class="fa fa-circle header__nav-dot" aria-hidden="true"></i>
+              <i class="fa fa-circle header__nav-dot" aria-hidden="true"></i>
+              <i class="fa fa-circle header__nav-dot" aria-hidden="true"></i>
             </span>
           </li>
         </ul>
       </div>
     </header>
-    <main class="main__container" role="main">
+    <main role="main">
       <section>
         <div class="bonus-offer__container">
           <div class="bonus-offer__wrapper">
@@ -57,16 +57,16 @@
               Trade global assets with excellent trading conditions,
               award-winning platforms, and 24/7 support.
             </p>
-            <p class="bonus-offer__joined-info">
+            <p class="bonus-offer__join">
               Join over 10 million clients who have trusted XM since 2009.
             </p>
-            <div class="bonus-offer__open-account-btn">
-              <p class="bonus-offer__open-account-name">
+            <div class="bonus-offer__open-btn">
+              <p class="bonus-offer__open-label">
                 Open an account
-                <span class="bonus-offer__open-account-info">Trade with real or demo funds</span>
+                <span class="bonus-offer__open-info">Trade with real or demo funds</span>
               </p>
             </div>
-            <p class="bonus-offer__open-account-disclaimer">
+            <p class="bonus-offer__disclaimer">
               The bonus is <strong>not withdrawable</strong> only profits are.
               T&Cs apply.
             </p>
@@ -111,16 +111,14 @@
                 </span>
               </li>
             </ul>
-            <div class="qr-code__wrapper">
-              <img class="qr-code__image" src="images/app-qr-code.webp" alt="app-qr-code" />
-              <p class="qr-code__info">
+            <div class="xm-app__qr-code">
+              <img class="xm-app__qr-image" src="images/app-qr-code.webp" alt="app-qr-code" />
+              <p class="xm-app__qr-download">
                 Scan to Download the <strong> XM App </strong> in Play Store
               </p>
             </div>
           </div>
-          <!-- <div class="xm-app__image-wrapper"> -->
           <img class="xm-app__image" src="images/trading-app-img.webp" alt="trading-app-image" />
-          <!-- </div> -->
         </div>
       </section>
       <section>
@@ -134,63 +132,63 @@
               products and services.
             </p>
 
-            <div class="join-items__container">
-              <div class="join-item__container">
-                <img class="join-item__svg" src="svg/Shield-dollar.svg" alt="shield-dollar" />
-                <h3 class="join-item__title">License and Regulation</h3>
-                <p class="join-item__subtitle">
+            <div class="join__items">
+              <div class="join__item-card">
+                <img class="join__item-svg" src="svg/Shield-dollar.svg" alt="shield-dollar" />
+                <h3 class="join__item-title">License and Regulation</h3>
+                <p class="join__item-subtitle">
                   XM is a multi-regulated and licensed broker. Your security
                   is our priority.
                 </p>
               </div>
-              <div class="join-item__container">
-                <img class="join-item__svg" src="svg/Support24-7.svg" alt="Support24-7" />
-                <h3 class="join-item__title">24-7 Support</h3>
-                <p class="join-item__subtitle">
+              <div class="join__item-card">
+                <img class="join__item-svg" src="svg/Support24-7.svg" alt="Support24-7" />
+                <h3 class="join__item-title">24-7 Support</h3>
+                <p class="join__item-subtitle">
                   Get help round the clock from a professional, award-winning
                   support team, in 30+ languages.
                 </p>
               </div>
-              <div class="join-item__container">
-                <img class="join-item__svg" src="svg/Users.svg" alt="Users" />
-                <h3 class="join-item__title">10+ Years in the Industry</h3>
-                <p class="join-item__subtitle">
+              <div class="join__item-card">
+                <img class="join__item-svg" src="svg/Users.svg" alt="Users" />
+                <h3 class="join__item-title">10+ Years in the Industry</h3>
+                <p class="join__item-subtitle">
                   You’re in good hands with XM. We’ve been serving clients in
                   190 countries, since 2009.
                 </p>
               </div>
-              <div class="join-item__container">
-                <img class="join-item__svg" src="svg/Displays.svg" alt="Displays" />
-                <h3 class="join-item__title">Cutting-edge Technology</h3>
-                <p class="join-item__subtitle">
+              <div class="join__item-card">
+                <img class="join__item-svg" src="svg/Displays.svg" alt="Displays" />
+                <h3 class="join__item-title">Cutting-edge Technology</h3>
+                <p class="join__item-subtitle">
                   Enhance your experience with advanced, user-friendly
                   platforms, on all your devices.
                 </p>
               </div>
-              <div class="join-item__container">
-                <img class="join-item__svg" src="svg/Speed.svg" alt="Speed" />
-                <h3 class="join-item__title">Fast Registration</h3>
-                <p class="join-item__subtitle">
+              <div class="join__item-card">
+                <img class="join__item-svg" src="svg/Speed.svg" alt="Speed" />
+                <h3 class="join__item-title">Fast Registration</h3>
+                <p class="join__item-subtitle">
                   Open an account within minutes, thanks to our fast processes
                   and helpful team.
                 </p>
               </div>
-              <div class="join-item__container">
-                <img class="join-item__svg" src="svg/Withdraw-dollar.svg" alt="Widthraw-dollar" />
-                <h3 class="join-item__title">Trustworthy Payment Methods</h3>
-                <p class="join-item__subtitle">
+              <div class="join__item-card">
+                <img class="join__item-svg" src="svg/Withdraw-dollar.svg" alt="Widthraw-dollar" />
+                <h3 class="join__item-title">Trustworthy Payment Methods</h3>
+                <p class="join__item-subtitle">
                   Use global and local payment methods and enjoy fast deposits
                   and withdrawals.
                 </p>
               </div>
             </div>
-            <div class="join-item__open-account-btn">
-              <p class="join-item__open-account-name">
+            <div class="join__item-open-btn">
+              <p class="join__item-open-label">
                 Open an account
-                <span class="join-item__open-account-info">Trade with real or demo funds</span>
+                <span class="join__item-open-info">Trade with real or demo funds</span>
               </p>
             </div>
-            <p class="join-item__open-account-disclaimer">
+            <p class="join__item-disclaimer">
               The bonus is <strong>not withdrawable</strong> only profits are.
               T&Cs apply.
             </p>
@@ -198,55 +196,55 @@
         </div>
       </section>
       <section>
-        <div class="awards__container container--max-width">
-          <h1 class="awards__title">
+        <div class="award__container container--max-width">
+          <h1 class="award__title">
             Experience Award-Winning Products and Services
           </h1>
-          <p class="awards__subtitle">
+          <p class="award__subtitle">
             We’re honoured to have received dozens of prestigious industry
             awards. These awards, which are chosen by our peers and voted for
             by traders, are a testament to the hard work we put in for you!
           </p>
-          <div class="awards__box-wrapper">
+          <div class="award__boxes">
             <div class="award__box">
-              <img class="award-box__image" src="images/award-1.webp" alt="award-1" />
-              <p class="award-box__title">The Best Mobile App</p>
-              <div class="award-box__line-border"></div>
-              <p class="award-box__event-title">Financial Expo Egypt</p>
+              <img class="award__box-image" src="images/award-1.webp" alt="award-1" />
+              <p class="award__box-title">The Best Mobile App</p>
+              <div class="award__box-line-border"></div>
+              <p class="award__box-event">Financial Expo Egypt</p>
             </div>
             <div class="award__box">
-              <img class="award-box__image" src="images/award-2.webp" alt="award-2" />
-              <p class="award-box__title">
+              <img class="award__box-image" src="images/award-2.webp" alt="award-2" />
+              <p class="award__box-title">
                 Best Customer Service Experience – Global
               </p>
-              <div class="award-box__line-border"></div>
-              <p class="award-box__event-title">The European Magazine</p>
+              <div class="award__box-line-border"></div>
+              <p class="award__box-event">The European Magazine</p>
             </div>
             <div class="award__box">
-              <img class="award-box__image" src="images/award-3.webp" alt="award-3" />
-              <p class="award-box__title">Best Customer Support</p>
-              <div class="award-box__line-border"></div>
-              <p class="award-box__event-title">
+              <img class="award__box-image" src="images/award-3.webp" alt="award-3" />
+              <p class="award__box-title">Best Customer Support</p>
+              <div class="award__box-line-border"></div>
+              <p class="award__box-event">
                 Capital Finance International Magazine (CFI.co)
               </p>
             </div>
             <div class="award__box">
-              <img class="award-box__image" src="images/award-4.webp" alt="award-4" />
-              <p class="award-box__title">
+              <img class="award__box-image" src="images/award-4.webp" alt="award-4" />
+              <p class="award__box-title">
                 Most Reliable Broker, Global 2023
               </p>
-              <div class="award-box__line-border"></div>
-              <p class="award-box__event-title">
+              <div class="award__box-line-border"></div>
+              <p class="award__box-event">
                 Capital Finance International Magazine (CFI.co)
               </p>
             </div>
             <div class="award__box">
-              <img class="award-box__image" src="images/award-5.webp" alt="award-5" />
-              <p class="award-box__title">
+              <img class="award__box-image" src="images/award-5.webp" alt="award-5" />
+              <p class="award__box-title">
                 Most Transparent Broker, Global 2023
               </p>
-              <div class="award-box__line-border"></div>
-              <p class="award-box__event-title">
+              <div class="award__box-line-border"></div>
+              <p class="award__box-event">
                 Capital Finance International Magazine (CFI.co)
               </p>
             </div>
@@ -256,13 +254,13 @@
       <section>
         <div class="MP-sponsor__container">
           <div class="MP-sponsor__wrapper container--max-width">
-            <div class="MP__wrapper">
-              <h4 class="MP__subtitle">PROUD SPONSOR OF</h4>
-              <h1 class="MP__name">Manny Pacquiao</h1>
-              <h4 class="MP__boxing-title">WORLD BOXING CHAMPION</h4>
+            <div class="MP-sponsor__info">
+              <h4 class="MP-sponsor__subtitle">PROUD SPONSOR OF</h4>
+              <h1 class="MP-sponsor__name">Manny Pacquiao</h1>
+              <h4 class="MP-sponsor__boxing-title">WORLD BOXING CHAMPION</h4>
             </div>
-            <div class="MP__image-wrapper">
-              <img class="MP__image" src="images/manny-sponsorship-img-LP.png" alt="Manny Pacquiao sponsor image" />
+            <div class="MP-sponsor__image-wrapper">
+              <img class="MP-sponsor__image" src="images/manny-sponsorship-img-LP.png" alt="Manny Pacquiao sponsor image" />
             </div>
           </div>
         </div>
@@ -270,41 +268,38 @@
       <section>
         <div class="footer__container">
           <div class="footer__container-wrapper container--max-width">
-            <div class="footer-soc-med__container">
-              <div class="footer-social-banners__container">
-                <img class="footer-social-banner__image" src="images/meta-quotes.png" alt="Meta quotes" />
-                <img class="footer-social-banner__image" src="images/verisign.png" alt="Verisign" />
-                <img class="footer-social-banner__image" src="images/unicef.png" alt="Unicef" />
-                <img class="footer-social-banner__image" src="images/IIP-Platinum-2023-platinum-footer.png"
+            <div class="footer__socmed-wrapper">
+              <div class="footer__socmed-banners">
+                <img class="footer__socmed-banner" src="images/meta-quotes.png" alt="Meta quotes" />
+                <img class="footer__socmed-banner" src="images/verisign.png" alt="Verisign" />
+                <img class="footer__socmed-banner" src="images/unicef.png" alt="Unicef" />
+                <img class="footer__socmed-banner" src="images/IIP-Platinum-2023-platinum-footer.png"
                   alt="Investors in people" />
               </div>
-              <div class="soc-med-icons__container">
-                <p class="sod-med__follow">Follow us on</p>
-                <div class="soc-med__icons-wrapper">
-                  <a class="soc-med__icons soc-med__icons--facebook" href="https://www.xm.com/goto/facebook"
+              <div class="footer__socmed-icons-wrapper">
+                <p class="footer__socmed-follow">Follow us on</p>
+                <div class="footer__socmed-icons">
+                  <a class="footer__socmed-icon footer__socmed-icon--facebook" href="https://www.xm.com/goto/facebook"
                     rel="nofollow noopener noreferrer" target="_blank">
                     <i class="fa fa-facebook" aria-hidden="true"></i>
                   </a>
-
-                  <a class="soc-med__icons soc-med__icons--twitter" href="https://www.xm.com/goto/twitter"
+                  <a class="footer__socmed-icon footer__socmed-icon--twitter" href="https://www.xm.com/goto/twitter"
                     rel="nofollow noopener noreferrer" target="_blank">
                     <i class="fa fa-brands fa-x-twitter" aria-hidden="true"></i>
                   </a>
-
-                  <a class="soc-med__icons soc-med__icons--youtube" href="https://www.xm.com/goto/youtube"
+                  <a class="footer__socmed-icon footer__socmed-icon--youtube" href="https://www.xm.com/goto/youtube"
                     rel="nofollow noopener noreferrer" target="_blank">
                     <i class="fa fa-youtube-play" aria-hidden="true"></i>
                   </a>
-
-                  <a class="soc-med__icons soc-med__icons--instagram" href="https://www.xm.com/goto/instagram"
+                  <a class="footer__socmed-icon footer__socmed-icon--instagram" href="https://www.xm.com/goto/instagram"
                     rel="nofollow noopener noreferrer" target="_blank">
                     <i class="fa fa-instagram" aria-hidden="true"></i>
                   </a>
-                  <a class="soc-med__icons soc-med__icons--linkedin" href="https://www.xm.com/goto/linkedin"
+                  <a class="footer__socmed-icon footer__socmed-icon--linkedin" href="https://www.xm.com/goto/linkedin"
                     rel="nofollow noopener noreferrer" target="_blank">
                     <i class="fa fa-linkedin" aria-hidden="true"></i>
                   </a>
-                  <a class="soc-med__icons soc-med__icons--telegram" href="https://www.xm.com/goto/telegram"
+                  <a class="footer__socmed-icon footer__socmed-icon--telegram" href="https://www.xm.com/goto/telegram"
                     rel="nofollow noopener noreferrer" target="_blank">
                     <i class="fa fa-telegram" aria-hidden="true"></i>
                   </a>
@@ -312,18 +307,15 @@
               </div>
             </div>
 
-            <hr class="footer__link-border" />
-            <div class="footer-links__container">
-              <div class="footer-policy--wrapper">
-                <a class="footer__link" href="#">Privacy Policy</a><span class="footer__vertical-bar">|</span>
-                <a class="footer__link" href="#">Cookie Policy</a><span class="footer__vertical-bar">|</span>
-                <a class="footer__link" href="#">Vulnerability Policy</a><span class="footer__vertical-bar">|</span>
-                <a class="footer__link" href="#">Terms and Conditions</a>
-              </div>
-              <!-- TODO: fix class name -->
-              <img class="footer__link-image" src="images/TP_Logo_LP_Footer.png" alt="TP logo" />
+            <hr class="footer__seperator" />
+            <div class="footer__policies">
+              <a class="footer__policy" href="#">Privacy Policy</a><span class="footer__vertical-bar">|</span>
+              <a class="footer__policy" href="#">Cookie Policy</a><span class="footer__vertical-bar">|</span>
+              <a class="footer__policy" href="#">Vulnerability Policy</a><span class="footer__vertical-bar">|</span>
+              <a class="footer__policy" href="#">Terms and Conditions</a>
+              <img class="footer__trading-point" src="images/TP_Logo_LP_Footer.png" alt="Trading-Point logo" />
             </div>
-            <hr class="footer__link-border" />
+            <hr class="footer__seperator" />
             <p class="footer__info">
               Legal: This website is operated by XM Global Limited with
               registered address at Suite 101, 63 Eve Street, Belize City,
