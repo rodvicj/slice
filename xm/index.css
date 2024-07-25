@@ -213,6 +213,7 @@ body {
 
 .xm-app__item-icon--green {
   color: green;
+  font-size: 1rem;
 }
 
 .xm-app__item-detail {

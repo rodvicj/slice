@@ -19,7 +19,6 @@ p {
   text-align: left;
   padding: 1em;
   box-shadow: 0 0 0 1px black;
-  max-width: 240px;
 }
 
 .grid__container {
@@ -45,7 +44,17 @@ p {
   /* align-content: baseline; */
   grid-template-areas:
     "header1 header2 header3 header4 header5"
-    "content1 content2 content3 content4 subject";
+    "content1 content2 content3 content4 subject"
+    "footer footer footer footer footer";
+}
+
+.footer {
+  grid-area: footer;
+  /* text-align: center; */
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  min-height: 150px;
 }
 
 /* .grid__item-1 { */
